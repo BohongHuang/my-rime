@@ -6,10 +6,10 @@ customization:
   rime_version: 1.7.3
 
 patch:
-  "menu/page_size": 9
+  "menu/page_size": 5
   schema_list:
     # - { schema: luna_pinyin }
-    - { schema: double_pinyin_flypy }
+    # - { schema: double_pinyin_flypy }
     - { schema: luna_pinyin_simp }
 
   "switcher/hotkeys": # 这个列表里每项定义一个快捷键，使哪个都中
