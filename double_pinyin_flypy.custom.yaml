@@ -107,7 +107,7 @@ patch:
   translator/preedit_format: {} # 输入双拼码的时候不转化为全拼码
 
   punctuator:
-    import_preset: mysymbols # mysymbols
+    import_preset: presets/mysymbols # mysymbols
     half_shape:
       "`": ["`", "·"]
       "~": "～"
@@ -178,7 +178,7 @@ patch:
   "schema/dependencies/@next": easy_en
   "engine/translators/@next": table_translator@english  # 載入翻譯英文的碼表翻譯器，取名爲 english
   english:  # english 翻譯器的設定項
-    dictionary: easy_en
+    dictionary: easy_en.proxy
     enable_completion: false     # 是否启用英文输入联想补全
     enable_sentence: false
     initial_quality: -3

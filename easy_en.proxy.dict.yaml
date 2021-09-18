@@ -1,0 +1,19 @@
+# Rime dictionary
+# mim: set ts=8 sw=8 noet:
+# encoding: utf-8
+#
+# easy_en - Easy English @imy0823 enhance version
+#
+# Patrick <ipatrickmac@gmail.com>
+# 
+# Easy English
+#
+
+---
+name: easy_en.proxy
+version: "0.2"
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  - dicts/easy_en
+...

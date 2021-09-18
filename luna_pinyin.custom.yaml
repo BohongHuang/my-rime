@@ -21,7 +21,7 @@ patch:
   #  - { when: has_menu, accept: bracketright, send: Page_Down }
   "switches/@0/reset": 1  #表示将 switcher 列表中的第一个元素（即 ascii_mode 开关）的初始值重设为状态1（即“英文”）。
   #表情'/'输入
-  punctuator/import_preset: mysymbols #表情
+  punctuator/import_preset: presets/mysymbols #表情
   recognizer/patterns/punct: "^\\\\([a-z]+|[0-9])$" #输入‘/’
   # "^/([a-z]+|[0-9])$"
   # end
@@ -47,7 +47,7 @@ patch:
   "engine/translators/@next": table_translator@english
   # english 翻譯器的設定項
   english:
-    dictionary: easy_en
+    dictionary: easy_en.proxy
     spelling_hints: 9
     enable_completion: true
     enable_sentence: false
